@@ -31,6 +31,7 @@ class Program
 
     static void Main(string[] args)
     {
+        Console.WriteLine("Froylan De Jesus Alvarez Rodriguez: Desarrollo de sistemas en red");
         Console.WriteLine("El main thread comienza aquí.");
         Program.DoTrabajoPesado();
         Program.DoAlgo();
