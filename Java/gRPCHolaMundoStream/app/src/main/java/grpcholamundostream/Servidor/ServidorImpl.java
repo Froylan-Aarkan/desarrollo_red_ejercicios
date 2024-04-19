@@ -1,5 +1,9 @@
 package grpcholamundostream.Servidor;
 
+import java.util.Scanner;
+
+import com.proto.saludo.Holamundo.LecturaRequest;
+import com.proto.saludo.Holamundo.LecturaResponse;
 import com.proto.saludo.Holamundo.SaludoRequest;
 import com.proto.saludo.Holamundo.SaludoResponse;
 import com.proto.saludo.SaludoServiceGrpc.SaludoServiceImplBase;
@@ -26,6 +30,18 @@ public class ServidorImpl extends SaludoServiceImplBase{
         }
 
         responseObserver.onCompleted();
+    }
+    
+    @Override
+    public void lecturaStream(LecturaRequest request, StreamObserver<LecturaResponse> responseObserver) {
+        try (Scanner scanner = new Scanner(ServidorImpl.class.getResourceAsStream(request.getArchivo()))) {
+            while (scanner.hasNextLine()) {
+                LecturaResponse cadena = LecturaResponse.newBuilder().setCadena(scanner.nextLine()).build();
+                responseObserver.onNext(cadena);
+            }
+
+            responseObserver.onCompleted();
+        }
     }
     
 }

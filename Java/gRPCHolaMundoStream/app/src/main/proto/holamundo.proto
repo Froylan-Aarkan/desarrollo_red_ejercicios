@@ -14,4 +14,14 @@ service SaludoService {
     rpc saludo(SaludoRequest) returns (SaludoResponse);
 
     rpc saludoStream(SaludoRequest) returns (stream SaludoResponse);
+
+    rpc lecturaStream (LecturaRequest) returns (stream LecturaResponse);
+}
+
+message LecturaRequest{
+    string archivo = 2;
+}
+
+message LecturaResponse{
+    string cadena = 2;
 }

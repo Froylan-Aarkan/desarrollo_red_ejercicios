@@ -1,6 +1,7 @@
 package grpcholamundostream.Cliente;
 
 import com.proto.saludo.SaludoServiceGrpc;
+import com.proto.saludo.Holamundo.LecturaRequest;
 import com.proto.saludo.Holamundo.SaludoRequest;
 import com.proto.saludo.Holamundo.SaludoResponse;
 
@@ -26,14 +27,24 @@ public class Cliente {
         });
     }
 
+    public static void lecturaStream(ManagedChannel ch){
+        SaludoServiceGrpc.SaludoServiceBlockingStub stub = SaludoServiceGrpc.newBlockingStub(ch);
+        LecturaRequest peticion = LecturaRequest.newBuilder().setArchivo("/archivote.csv").build();
+
+        stub.lecturaStream(peticion).forEachRemaining(respuesta ->{
+            System.out.println("Respuesta RPC: " + respuesta.getCadena());
+        });
+    }
+
     public static void main(String[] args) {
         String host = "localhost";
         int puerto = 1111;
 
         ManagedChannel ch = ManagedChannelBuilder.forAddress(host, puerto).usePlaintext().build();
 
-        saludarUnario(ch);
-        saludarStream(ch);
+        // saludarUnario(ch);
+        // saludarStream(ch);
+        lecturaStream(ch);
 
         System.out.println("Apagando...");
         ch.shutdown();
