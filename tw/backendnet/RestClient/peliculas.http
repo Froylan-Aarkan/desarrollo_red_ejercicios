@@ -1,0 +1,33 @@
+GET http://localhost:3000/api/peliculas
+
+GET http://localhost:3000/api/peliculas?s=Dun
+
+GET http://localhost:3000/api/peliculas/19
+
+###
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "The Maze Runner",
+    "sinopsis": "El filme sigue la historia de Thomas, un adolescente cuya memoria fue borrada y que ha sido encerrado junto a otros chicos de su edad en un laberinto plagado de monstruos y misterios. Con el transcurrir de los días, va desentrañando los secretos acerca de quiénes los encerraron allí y por qué, mientras debe convivir y adaptarse a la vida cotidiana de los que ya habitaban los interiores del laberinto.",
+    "anio": 2014
+}
+
+###
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+{
+    "titulo": "Top Gun",
+    "sinopsis": "Pete Mitchell, mejor conocido como “Maverick”, es un impulsivo piloto es invitado a formar parte de un escuadrón de élite llamado Top Gun luego de salvar a sus compañeros durante una misión sobrevolando el Golfo Pérsico.",
+    "anio": 1986
+}
+
+###
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+{
+    "titulo": "Deadpool",
+    "sinopsis": "La película cuenta la historia de Wade Wilson, un ex-militar y mercenario que, tras someterse a un experimento para curar su cáncer, adquiere habilidades regenerativas y se convierte en Deadpool.",
+    "anio": 2016
+}
