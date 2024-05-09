@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BmMwulrVLNHGdOt+QD7xn+r4DwRTtyR/fa/PNZEpK8ogAjNbTO5TLHxQ8pKp8qsYWbqZEB2BLjawJEJaNnTC8A==",
+  "dgSpecHash": "xXOBw1yi0uG4zLLXB98o3tprriaDWz0yzY7vHZpgq+YTYrFrlrnKWXTF6KqqafHc+EB9zaxDyU9pkFeRCf2y+A==",
   "success": true,
-  "projectFilePath": "D:\\Coding\\dsr\\tw\\backendnet\\backendnet.csproj",
+  "projectFilePath": "D:\\Coding\\Repositorios GitHub\\desarrollo_red_ejercicios\\tw\\backendnet\\backendnet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\froyl\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\froyl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

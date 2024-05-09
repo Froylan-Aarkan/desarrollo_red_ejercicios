@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Coding\\dsr\\tw\\backendnet\\backendnet.csproj": {}
+    "D:\\Coding\\Repositorios GitHub\\desarrollo_red_ejercicios\\tw\\backendnet\\backendnet.csproj": {}
   },
   "projects": {
-    "D:\\Coding\\dsr\\tw\\backendnet\\backendnet.csproj": {
+    "D:\\Coding\\Repositorios GitHub\\desarrollo_red_ejercicios\\tw\\backendnet\\backendnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding\\dsr\\tw\\backendnet\\backendnet.csproj",
+        "projectUniqueName": "D:\\Coding\\Repositorios GitHub\\desarrollo_red_ejercicios\\tw\\backendnet\\backendnet.csproj",
         "projectName": "backendnet",
-        "projectPath": "D:\\Coding\\dsr\\tw\\backendnet\\backendnet.csproj",
+        "projectPath": "D:\\Coding\\Repositorios GitHub\\desarrollo_red_ejercicios\\tw\\backendnet\\backendnet.csproj",
         "packagesPath": "C:\\Users\\froyl\\.nuget\\packages\\",
-        "outputPath": "D:\\Coding\\dsr\\tw\\backendnet\\obj\\",
+        "outputPath": "D:\\Coding\\Repositorios GitHub\\desarrollo_red_ejercicios\\tw\\backendnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\froyl\\AppData\\Roaming\\NuGet\\NuGet.Config",
